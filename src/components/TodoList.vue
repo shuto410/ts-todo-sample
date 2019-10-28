@@ -7,12 +7,13 @@
         />
         <ul v-if="this.todos.length">
             <TodoListItem
-                v-for="todo in this.todos"
+                v-for="todo in todos"
                 :key="todo.id"
                 :todo="todo"
                 @remove="removeTodo"
             />
         </ul>
+         
         <p v-else>
            Nothing left in the list,
         </p>
